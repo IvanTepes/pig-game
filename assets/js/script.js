@@ -45,8 +45,8 @@ const init = function () {
     diceEl.classList.add('hidden');
     btnHold.classList.add('hidden');
 
-    // Removing the class btn__hold-1 from the btnHold element.
-    btnHold.classList.remove('btn__hold-1');
+    // Removing the class btn__roll-1 from the btnRoll element.
+    btnRoll.classList.remove('btn__roll-1');
 
     /* Removing the winner class from both players 
     and then adding the active class to player 1
@@ -68,8 +68,8 @@ const switchPlayer = function () {
     player0El.classList.toggle('player__active');
     player1El.classList.toggle('player__active');
 
-    // Toggling the class btn__hold-1 on the btnHold element.
-    btnHold.classList.toggle(`btn__hold-1`);
+    // Toggling the class btn__roll-1 on the btnRoll element. */
+    btnRoll.classList.toggle(`btn__roll-1`);
 };
 
 // Rolling dice functionality
