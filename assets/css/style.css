@@ -131,7 +131,7 @@ main {
 .btn::first-letter {
     font-size: 2.4rem;
     display: inline-block;
-    margin-right: 0.7rem;
+    /* margin-right: 0.7rem; */
 }
 
 .btn__new {
@@ -154,7 +154,7 @@ main {
 
 .btn__hold {
     top: 46.1rem;
-    top: 45.5%;
+    top: 47%;
 }
 
 /* .btn__hold-0 {
@@ -167,7 +167,7 @@ main {
 
 .btn__info {
     left: 15%;
-    top: 47.5%;
+    top: 48%;
 }
 
 .btn:active {
@@ -182,7 +182,7 @@ main {
 .dice {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 46%;
     /* top: 16.5rem; */
     transform: translateX(-50%);
     height: 10rem;
