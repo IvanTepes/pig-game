@@ -107,7 +107,7 @@ main {
 .btn {
     position: absolute;
     /* left: 50%; */
-    left: 86%;
+    /* left: 86%; */
     transform: translateX(-50%);
     color: #444;
     background: none;
@@ -144,18 +144,18 @@ main {
     top: 45%;
 } */
 
-.btn__roll-0 {
+/* .btn__roll-0 {
     top: 18.5%;
 }
 
 .btn__roll-1 {
     top: 68.5%;
-}
+} */
 
-.btn__hold {
+/* .btn__hold {
     top: 46.1rem;
     top: 47%;
-}
+} */
 
 /* .btn__hold-0 {
     top: 18.5%;
@@ -165,10 +165,10 @@ main {
     top: 68.5%;
 } */
 
-.btn__info {
+/* .btn__info {
     left: 15%;
-    top: 48%;
-}
+    top: 2rem;
+} */
 
 .btn:active {
     transform: translate(-50%, 3px);
@@ -181,8 +181,8 @@ main {
 
 .dice {
     position: absolute;
-    left: 50%;
-    top: 46%;
+    /* left: 50%;
+    top: 46%; */
     /* top: 16.5rem; */
     transform: translateX(-50%);
     height: 10rem;
@@ -213,20 +213,131 @@ main {
     }
     .dice {
         top: 37%;
+        left: 50%;
     }
     .btn__hold {
-        top: 67.5%;
+        top: 70%;
         left: 50%;
     }
     .btn__roll-0 {
-        top: 87%;
+        top: 87.5%;
         left: 25%;
     }
     .btn__roll-1 {
-        top: 87%;
+        top: 87.5%;
         left: 75%;
     }
 }
+
 @media (orientation: portrait) {
-    // Styles for portrait mode.
+    main {
+        flex-direction: column;
+    }
+    .btn__info {
+        left: 15%;
+        top: 2rem;
+    }
+    .dice {
+        left: 50%;
+        top: 46%;
+    }
+    .btn__hold {
+        left: 86%;
+        top: 47%;
+    }
+    .btn__roll-0 {
+        left: 86%;
+        top: 18.5%;
+    }
+    .btn__roll-1 {
+        left: 86%;
+        top: 68.5%;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 45.5%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+    .btn__info {
+        left: 15%;
+        top: 2rem;
+    }
+    .dice {
+        left: 50%;
+        top: 47%;
+    }
+    .btn__hold {
+        left: 88%;
+        top: 48.5%;
+    }
+    .btn__roll-0 {
+        left: 88%;
+        top: 19.5%;
+    }
+    .btn__roll-1 {
+        left: 88%;
+        top: 74.5%;
+    }
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .dice {
+        top: 40%;
+    }
+
+    .btn__hold {
+        top: 74%;
+    }
+
+    .btn__roll-0 {
+        top: 89.5%;
+    }
+    .btn__roll-1 {
+        top: 89.5%;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .dice {
+        top: 40%;
+    }
+
+    .btn__hold {
+        top: 74%;
+    }
+
+    .btn__roll-0 {
+        top: 89.5%;
+    }
+    .btn__roll-1 {
+        top: 89.5%;
+    }
 }
