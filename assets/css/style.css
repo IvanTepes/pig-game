@@ -139,22 +139,31 @@ main {
     left: 50%;
     top: 2rem;
 }
-.btn__roll {
-    /* top: 39.3rem; */
+/* .btn__roll {
+    top: 39.3rem;
     top: 45%;
-}
-/* .btn__hold {
-    top: 46.1rem;
-    top: 80.5%;
 } */
 
-.btn__hold-0 {
+.btn__roll-0 {
+    top: 18.5%;
+}
+
+.btn__roll-1 {
+    top: 68.5%;
+}
+
+.btn__hold {
+    top: 46.1rem;
+    top: 45.5%;
+}
+
+/* .btn__hold-0 {
     top: 18.5%;
 }
 
 .btn__hold-1 {
     top: 68.5%;
-}
+} */
 
 .btn__info {
     left: 15%;
@@ -194,8 +203,7 @@ main {
     display: none;
 }
 
-/* old Smartphones (landscape) ----------- */
-@media only screen and (min-width: 765px) {
+@media (orientation: landscape) {
     main {
         flex-direction: row;
     }
@@ -206,88 +214,19 @@ main {
     .dice {
         top: 37%;
     }
-    .btn__roll {
-        top: 67.5%;
-        left: 50%;
-    }
-    .btn__hold-0 {
-        top: 87%;
-        left: 25%;
-    }
-    .btn__hold-1 {
-        top: 87%;
-        left: 75%;
-    }
-}
-
-/* Extra small devices (phones, 320px and down) */
-/* @media only screen and (min-width: 322px) {
-    main {
-        width: 90%;
-        flex-direction: column;
-    }
-
-    
-
-    .btn__roll {
-        top: 45%;
-    }
-
     .btn__hold {
-        top: 80.5%;
-    }
-
-    .btn__new {
-        left: 50%;
-        top: 2rem;
-    }
-
-    .dice {
-        top: 45%;
-    }
-} */
-
-/* @media only screen and (orientation: landscape) {
-    main {
-        flex-direction: row;
-    }
-    .btn__info {
-        left: 50%;
-        top: 18%;
-    }
-    .dice {
-        top: 37%;
-    }
-    .btn__roll {
         top: 67.5%;
         left: 50%;
     }
-    .btn__hold-0 {
+    .btn__roll-0 {
         top: 87%;
         left: 25%;
     }
-    .btn__hold-1 {
+    .btn__roll-1 {
         top: 87%;
         left: 75%;
     }
-} */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    ...;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    ...;
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    ...;
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    ...;
+@media (orientation: portrait) {
+    // Styles for portrait mode.
 }
